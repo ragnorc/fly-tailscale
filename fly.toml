@@ -1,0 +1,15 @@
+# fly.toml file generated for flytail on 2022-02-27T16:08:59+01:00
+
+app = "flytail"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
+
+[env]
+  TAILSCALED_PORT = "8080"
+  TAILSCALE_ADVERTISE_ROUTES = 'fdaa:0:3dfd::/48'
+  TAILSCALE_ACCEPT_ROUTES = true
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
